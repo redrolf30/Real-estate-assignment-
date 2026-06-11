@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nova Estates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .login-container {
+            background: white;
+            border: 3px solid #ddd;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+            padding: 45px 35px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .big-n {
+            position: absolute;
+            top: -70px;
+            right: -90px;
+            font-size: 320px;
+            font-weight: bold;
+            color: #c8102e;
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .logo {
+            font-size: 72px;
+            font-weight: bold;
+            color: #c8102e;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #c8102e;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #c8102e;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #a50d24;
+        }
+
+        .extra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 14.5px;
+        }
+
+        .forgot a {
+            color: #c8102e;
+            text-decoration: none;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 15px;
+        }
+
+        .signup a {
+            color: #c8102e;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="big-n">N</div>
+        
+        <div class="logo">N</div>
+        <h2>Sign in to Nova Estates</h2>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="login-btn">LOG IN</button>
+        </form>
+
+        <div class="extra">
+            <label><input type="checkbox"> Remember me</label>
+            <span class="forgot"><a href="#">Forgot Password?</a></span>
+        </div>
+
+        <div class="signup">
+            Don't have an account? <a href="#">Sign up here</a>
+        </div>
+    </div>
+
+</body>
+</html>
